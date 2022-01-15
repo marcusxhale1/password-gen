@@ -21,30 +21,30 @@ function generatePassword(){
     var charBase=""
     var generatedPassword=""
 
-    var confirmlower=confirm("Do you want lower case characters?") 
+    var confirmlower=confirm("Do you want lower-case characters?") 
     if (confirmlower) {
         charBase+=lower
     }
 
-    var confirmupper=confirm("Do you want upper case characters?") 
+    var confirmupper=confirm("Do you want upper-case characters?") 
     if (confirmupper) {
         charBase+=upper
     }
-    var confirmnumber=confirm("Do you want numbers?") 
+    var confirmnumber=confirm("Do you want to add numbers to the password?") 
     if (confirmnumber) {
         charBase+=num
     }
-    var confirmspecial=confirm("Do you want special characters?") 
+    var confirmspecial=confirm("Do you want to add any special characters?") 
     if (confirmspecial) {
         charBase+=special
     }
-    var length = prompt("Choose a password length of 8-128")
+    var length = prompt("Please choose a password length of 8-128")
       if(length > 128){
-        window.alert("Too many characters");
+        window.alert("That's way to many characters, what are you thinking? Lol");
         length();
       }
       else if(length < 8) {
-        window.alert("We need at least 8 characters in this thang");
+        window.alert("We need at least 8 characters in this thang. Thanks!");
         length();
       }
       
